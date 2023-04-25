@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "de39b35a-a654-4c25-a3c5-43a93146f84a",
+		"name": "Rannlab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "FirstName",
+							"value": "Naresh",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "Gohil",
+							"type": "text"
+						},
+						{
+							"key": "SchoolName",
+							"value": "SGP-una",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "naresh@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "Mobile",
+							"value": "8989099889",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "Naresh@99",
+							"type": "text"
+						},
+						{
+							"key": "PhotoOfTheStudents",
+							"type": "file",
+							"src": "/C:/Users/nares/OneDrive/Pictures/12.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/api/v1/student/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UserName",
+							"value": "8989099456",
+							"type": "default"
+						},
+						{
+							"key": "Password",
+							"value": "Naresh@99",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/api/v1/student/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Upload",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
